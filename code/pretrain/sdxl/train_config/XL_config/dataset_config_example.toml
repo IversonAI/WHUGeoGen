@@ -1,0 +1,65 @@
+[general]
+keep_tokens = 0
+color_aug = false
+shuffle_caption = false
+caption_extension = '.caption'
+
+[[datasets]]
+resolution = 512
+batch_size = 16
+
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data512/low/RS_images/NewYork"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data512/low/RS_images/NewYork/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data512/mid/RS_images/NewYork"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data512/mid/RS_images/NewYork/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data512/high/RS_images/NewYork"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data512/high/RS_images/NewYork/all_meta_clean.json"
+num_repeats = 1
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data512/low/RS_images/BeiJing"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data512/low/RS_images/BeiJing/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data512/mid/RS_images/BeiJing"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data512/mid/RS_images/BeiJing/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data512/high/RS_images/BeiJing"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data512/high/RS_images/BeiJing/all_meta_clean.json"
+num_repeats = 1
+[[datasets]]
+resolution = 1024
+batch_size = 4
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data1024/low/RS_images/NewYork"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data1024/low/RS_images/NewYork/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data1024/mid/RS_images/NewYork"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data1024/mid/RS_images/NewYork/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data1024/high/RS_images/NewYork"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data1024/high/RS_images/NewYork/all_meta_clean.json"
+num_repeats = 1
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data1024/low/RS_images/BeiJing"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data1024/low/RS_images/BeiJing/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data1024/mid/RS_images/BeiJing"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data1024/mid/RS_images/BeiJing/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/pretrain/data1024/high/RS_images/BeiJing"
+metadata_file = "/data/dailei/WHUGeoGen3/pretrain/data1024/high/RS_images/BeiJing/all_meta_clean.json"
+num_repeats = 1

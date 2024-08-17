@@ -1,0 +1,50 @@
+[general]
+keep_tokens = 0
+color_aug = false
+shuffle_caption = false
+caption_extension = '.caption'
+enable_bucket=true
+[[datasets]]
+resolution = 512
+batch_size = 16
+
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Airport/low/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Airport/low/RS_images/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Airport/mid/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Airport/mid/RS_images/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Airport/high/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Airport/high/RS_images/all_meta_clean.json"
+num_repeats = 1
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Port/low/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Port/low/RS_images/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Port/mid/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Port/mid/RS_images/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Port/high/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Port/high/RS_images/all_meta_clean.json"
+num_repeats = 1
+
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Tank/low/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Tank/low/RS_images/all_meta_clean.json"
+num_repeats = 16
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Tank/mid/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Tank/mid/RS_images/all_meta_clean.json"
+num_repeats = 4
+[[datasets.subsets]]
+image_dir = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Tank/high/RS_images"
+metadata_file = "/data/dailei/WHUGeoGen3/Object_focus/pretrain/Tank/high/RS_images/all_meta_clean.json"
+num_repeats = 1
+

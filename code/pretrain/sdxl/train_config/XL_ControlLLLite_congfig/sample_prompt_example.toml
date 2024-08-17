@@ -1,0 +1,14 @@
+[general]
+flip_aug = false
+color_aug = false
+resolution = [512,512]
+
+[[datasets]]
+batch_size = 8
+enable_bucket = true
+
+    [[datasets.subsets]]
+    image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/RSVG_test_resized"
+    caption_extension = ".txt"
+    conditioning_data_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/RSVG_test_resized_canny"
+

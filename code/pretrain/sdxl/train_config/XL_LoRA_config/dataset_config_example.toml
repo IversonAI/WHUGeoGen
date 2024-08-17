@@ -1,0 +1,95 @@
+[general]
+keep_tokens = 0
+color_aug = false
+shuffle_caption = false
+caption_extension = '.caption'
+
+[[datasets]]
+resolution = 256
+batch_size = 32
+num_repeats = 1
+
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r1_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r1_rs_img_example"
+
+#caption_suffix= "in a r1 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r2_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r2_rs_img_example"
+
+#caption_suffix= "in a r2 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r3_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r3_rs_img_example"
+
+#caption_suffix= "in a r3 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r4_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s256_data_example/r4_rs_img_example"
+
+#caption_suffix= "in a r4 resolution"
+
+[[datasets]]
+resolution = 384
+batch_size = 24
+num_repeats = 1
+
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r1_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r1_rs_img_example"
+
+#caption_suffix= "in a r1 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r2_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r2_rs_img_example"
+
+#caption_suffix= "in a r2 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r3_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r3_rs_img_example"
+
+#caption_suffix= "in a r3 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r4_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s384_data_example/r4_rs_img_example"
+
+#caption_suffix= "in a r4 resolution"
+
+[[datasets]]
+resolution = 512
+batch_size = 16
+num_repeats = 1
+
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r1_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r1_rs_img_example"
+
+#caption_suffix= "in a r1 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r2_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r2_rs_img_example"
+
+#caption_suffix= "in a r2 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r3_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r3_rs_img_example"
+
+#caption_suffix= "in a r3 resolution"
+
+[[datasets.subsets]]
+#metadata_file = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r4_rs_img_example/meta_lat.json"
+image_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/Toy_Dataset/data_example/s512_data_example/r4_rs_img_example"
+
+#caption_suffix= "in a r4 resolution"

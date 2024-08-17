@@ -1,0 +1,8 @@
+[prompt]
+width = 512
+height = 512
+scale = 4
+sample_steps = 28
+[[prompt.subset]]
+prompt = "satellite image,cityscape,outdoors,no humans,scenery,arial view,outdoor"
+

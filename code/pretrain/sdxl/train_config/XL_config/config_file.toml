@@ -1,0 +1,69 @@
+[sdxl_arguments]
+cache_text_encoder_outputs = true
+no_half_vae = true
+min_timestep = 0
+max_timestep = 1000
+shuffle_caption = false
+
+[model_arguments]
+pretrained_model_name_or_path = "/home/wyd-7/dailei/code/0000_2023_Paper1/02_methods/SDXL-Train/models/sd_xl_base_1.0.safetensors"
+
+
+[dataset_arguments]
+debug_dataset = false
+in_json = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/RSVG_test_resized/meta_lat.json"
+train_data_dir = "/home/wyd-7/Documents/test/RSITMD/test/blip2_lora_dataset/RSVG_test_resized"
+dataset_repeats = 10
+keep_tokens = 0
+#resolution = "1024,1024"
+resolution = "512,512"
+
+caption_dropout_rate = 0
+caption_tag_dropout_rate = 0
+caption_dropout_every_n_epochs = 0
+color_aug = false
+token_warmup_min = 1
+token_warmup_step = 0
+
+[training_arguments]
+output_dir = "/home/wyd-7/dailei/code/0000_2023_Paper1/02_methods/SDXL-Train/outputs/fintune"
+output_name = "sdxl_finetune"
+save_precision = "fp16"
+save_every_n_steps = 200
+train_batch_size = 1
+max_token_length = 225
+mem_eff_attn = false
+xformers = true
+max_train_steps = 100000
+max_data_loader_n_workers = 8
+persistent_data_loader_workers = true
+gradient_checkpointing = true
+gradient_accumulation_steps = 1
+mixed_precision = "fp16"
+
+[logging_arguments]
+log_with = "tensorboard"
+logging_dir = "/home/wyd-7/dailei/code/0000_2023_Paper1/02_methods/SDXL-Train/outputs/content/fine_tune/logs"
+log_prefix = "sdxl_finetune"
+
+[sample_prompt_arguments]
+sample_every_n_steps = 100
+sample_sampler = "euler_a"
+
+[saving_arguments]
+save_model_as = "safetensors"
+save_state = true
+resume = ""
+
+[optimizer_arguments]
+optimizer_type = "AdaFactor"
+#learning_rate = 1e-6
+learning_rate = 2e-6
+train_text_encoder = false
+text_encoder_lr=1e-6
+max_grad_norm = 0
+optimizer_args = [ "scale_parameter=False", "relative_step=False", "warmup_init=False",]
+lr_scheduler = "constant_with_warmup"
+lr_warmup_steps = 100
+
+[advanced_training_config]
